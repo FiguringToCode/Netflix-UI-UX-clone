@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 900px;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+}
+
+nav {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 30px;
+    z-index: 10;  /* This property makes nav bar pop out from opaque box to look more bright. */
+}
+
+.intro .bg img {
+    width: 160px;
+}
+.intro .bg .btn-lang img {
+    width: 15px;
+}
+
+.intro .bg{
+    background-image: url("assets/bg.jpg");
+    width: 100vw;
+    height: 70vh;
+    /* Below Settings is done to make background responsive to phones and desktop. */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1300px, 100vw); /* Till 1300px its width will be 100vw then after it will expand */
+}
+
+.intro .OpaqueBox {
+    width: 100vw;
+    height: 70vh;
+    opacity: 0.6;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+.introtext {
+    color: white;
+    position: relative;
+    top: 180px;
+    z-index: 10;
+    text-align: center;
+    padding-bottom: 80px;
+    height: calc(100% - 31vh);
+}
+
+.introtext .p1 {
+    font-weight: 1000;
+    font-size: 35px;
+}
+.introtext .p2 {
+    font-size: 20px;
+    margin-top: 5px;
+}
+.introtext .p3 {
+    margin-top: 10px;
+}
+.introtext span input {
+    color: white;
+    font-weight: 500;
+    background-color: rgba(23, 23, 23, 0.7);
+    opacity: 0.6;
+    padding: 11px 80px 11px 20px;;
+    margin: 20px 5px 0px 0px;
+    border: 1px solid rgba(245, 245, 245, 0.5);
+    border-radius: 2px;
+}
+
+/* Buttons Styling */
+
+.btn-red {
+    color: white;
+    font-size:15px;
+    font-weight: 600;
+    background-color: red;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 2px;
+}
+.btn-red-sm {
+    color: white;
+    font-weight: 600;
+    background-color: red;
+    padding: 5px 12px 8px 12px;
+    border: none;
+    border-radius: 4px;
+}
+.btn-lang> img {
+    margin: 0px 10px 0px 0px;
+}
+.btn-lang {
+    color: white;
+    background: transparent;
+    padding: 7px 25px 2px 25px;
+    border: 0.2px solid white;
+    position: relative;
+    top: 4px;
+    border-radius: 3px;
+}
+.btn-lang > select  {
+    background: transparent;
+    color: white;
+    border: none;
+}
+.btn-lang > select > option {
+    color: white;
+    background-color: rgba(23, 23, 23, 1);
+}
+.seperation {
+    height: 7px;
+    width: 100vw;
+    background-color: slategrey;
+    margin: 103px 0px 0px 0px;
+}
+
+
+/* First Section Styling */
+
+.first {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.sec1txt .p4 {
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.sec1txt .p5 {
+    margin: 20px 0px 0px 0px;
+}
+
+.sec1Img {
+    position: relative;
+    z-index: 10;
+}
+
+.sec1Img img {
+    width: 440px;
+    position: relative;
+    z-index: 10;
+
+}
+
+.sec1Img video {
+    width: 345px;
+    position: absolute;
+    top: 55px;
+    right: 36px;
+}
+
+/* Second Section Styling */ 
+.second {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec2Img img {
+    width: 400px;
+}
+
+.sec2txt .p6 {
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.sec2txt .p7 {
+    margin: 20px 0px 0px 0px;
+}
+
+.seperation3 {
+    height: 7px;
+    width: 100vw;
+    background-color: slategrey;
+    margin: 40px 0px 0px 0px;
+}
+
+/* Third Setion Styling */
+.three {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec3txt .p8 {
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.sec3txt .p9 {
+    margin: 20px 0px 0px 0px;
+}
+
+.sec3Img {
+    position: relative;
+}
+
+.sec3Img img {
+    width: 448px;
+    position: relative;
+    z-index: 10;
+}
+
+.sec3Img video {
+    width: 354px;
+    position: absolute;
+    top: 60px;
+    right: 40px;
+}
+
+/* Forth Section Styling */ 
+.four {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.sec4Img img {
+    width: 400px;
+    margin: 80px 0px 0px 100px;
+    border-radius: 20px;
+} 
+
+.sec4txt :first-child{
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.sec4txt .p11 {
+    margin: 20px 0px 0px 0px;
+}
+
+/* FAQ Styling */
+.FAQ {
+    color: white;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 5vw 5vw 5vw 5vw 5vw 5vw 5vw;
+    justify-items: center;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.effect:hover{
+    transition: all 0.3s ease-out;
+    color: white;
+    background-color: #797979;
+    cursor: pointer;
+    padding: 30px 90px 30px 90px;
+}
+
+.FAQ h1 {
+    grid-row: 1/2;
+    grid-column: 2/2;
+}
+
+.Que1 {
+    grid-row: 2/3;
+    grid-column: 3/2;
+    background-color:  #414345;;
+    padding: 20px 70px 20px 70px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30vw;
+}
+
+.Que2 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 2;
+    background-color: #414345;
+    padding: 20px 70px 20px 70px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20vw;
+}
+
+.Que3 {
+    grid-row: 5/4;
+    grid-column: 2/2;
+    background-color: #414345;
+    padding: 20px 70px 20px 70px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 27vw;
+}
+
+.Que4 {
+    grid-row: 6/5;
+    grid-column: 2/2;
+    background-color: #414345;
+    padding: 20px 70px 20px 70px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 29vw;
+}
+
+.Que5 {
+    grid-row: 7 / 6;
+    grid-column: 2 / 2;
+    background-color: #414345;
+    padding: 20px 68px 20px 60px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30vw;
+}
+
+.Que6 {
+    grid-row: 7/ 6;
+    grid-column: 2/2;
+    background-color: #414345;
+    padding: 24px 68px 20px 60px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 21vw;
+}
+
+.Que7 {
+    grid-row: 7 / 8;
+    grid-column: 2 / 2;
+    background-color: #414345;
+    padding: 20px 68px 20px 60px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 25vw;
+}
+
+.seperation5 {
+    height: 7px;
+    width: 100vw;
+    background-color: slategrey;
+    margin: 40px 0px 0px 0px;
+}
+
+/* Footer Styling */
+
+.seperation6 {
+    margin-bottom: 50px;
+    height: 7px;
+    width: 100vw;
+    background-color: slategrey;
+    margin: 40px 0px 40px 0px;
+}
+
+.footer-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    gap: 5vw;
+}
+
+.footer-que {
+    font-size: large;
+    max-width: 40vw;
+    margin: 50px 298px;
+    color: white;
+}
+
+.footer-items a{
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 10px;
+}
+
+.footer-items :hover {
+    color: #797979;
+    cursor: pointer;
+}
+
+.seperation7 {
+    margin-bottom: 50px;
+    height: 7px;
+    width: 100vw;
+    background-color: slategrey;
+    margin: 60px 0px 0px 0px;
+}
+
+@media screen and (max-width: 1000px) {
+    .FAQ {
+        font-size: 10px;
+    }
+    .footer-que {
+        margin: 50px 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .first {
+        flex-wrap: wrap;
+    }
+    .second {
+        flex-wrap: wrap;
+    }
+    .three {
+        flex-wrap: wrap;
+    }
+    .four {
+        flex-wrap: wrap;
+    }
+    .footer-items {
+        margin: 10px 0px 0px 135px;
+        gap: 3vw;
+    }
+}
+
+@media screen and (max-width: 600px)  {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        gap: 70px;
+    }
+    .intro .bg img {
+        width: 90px;
+    }
+    .intro .bg .btn-lang img {
+        width: 15px;
+    }
+
+    .first {
+        margin-bottom: -40px;
+    }
+    .sec1txt .p4 {
+        text-align: center;
+        margin: 60px 0px 0px 0px;
+        font-size: 25px;
+    }
+    .sec1txt .p5 {
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .second {
+        margin-bottom: 70px;
+    }
+    .sec2txt .p6 {
+        text-align: center;
+        font-size: 25px;
+    }
+    .sec2txt .p7 {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .sec3txt .p8 {
+        text-align: center;
+        margin-top: 60px;
+        font-size: 25px;
+    }
+    .sec3txt .p9 {
+        text-align: center;
+        font-size: 15px;
+    }
+    .sec4txt .p10 {
+        text-align: center;
+        font-size: 25px;
+    }
+    .sec4txt .p11 {
+        text-align: center;
+        font-size: 15px;
+    }
+
+
+    .sec1Img{
+        position: relative;
+    }
+    .sec1Img img {
+        width: 270px;
+    }
+    .sec1Img video {
+        width: 200px;
+        position: absolute;
+        top: 40px;
+        right: 35px;
+    }
+
+    .sec2Img img {
+        margin-top: 25px;
+    }
+
+    .sec3Img{
+        position: relative;
+    }
+    .sec3Img img {
+        width: 270px;
+    }
+    .sec3Img video {
+        width: 213px;
+        position: absolute;
+        top: 37px;
+        right: 21px;
+    }
+
+    .sec4Img img {
+        width: 210px;
+    }
+
+    
+    .footer-items{
+        grid-template-columns: 1fr 1fr;
+        margin: 10px 0px 0px 35px;
+    }
+    .FAQ {
+        font-size: 7.5px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .btn-lang{
+        width: 100px;
+        margin-bottom: 20px;
+    }
+    .introtext .p1 {
+        margin-top: -30px;
+        font-size: 28px;
+    }
+    .Que1{
+        padding: 3px 35px 4px 35px;
+    }
+    .Que2{
+        padding: 3px 35px 4px 35px;
+    }
+    .Que3{
+        padding: 3px 35px 4px 35px;
+    }
+    .Que4{
+        padding: 3px 35px 4px 35px;
+    }
+    .Que5{
+        padding: 3px 34px 4px 34px;
+    }
+    .Que6{
+        padding: 3px 34px 4px 30px;
+    }
+    .Que7{
+        padding: 3px 34px 4px 30px;
+    }
+    .effect:hover{
+        transition: all 0.3s ease-out;
+        color: white;
+        background-color: #797979;
+        cursor: pointer;
+        padding: 10px 45px 10px 45px;
+    }
+}
